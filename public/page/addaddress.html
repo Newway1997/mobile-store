@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>添加收货地址</title>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/mui.picker.css" rel="stylesheet" />
+    <link href="../css/mui.poppicker.css" rel="stylesheet" />
+    <script src="../js/zepto.js"></script>
+    <script src="../js/template-web.js"></script>
+
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/mui.picker.js"></script>
+    <script src="../js/mui.poppicker.js"></script>
+    <script src="../js/city.data-3.js"></script>
+    <style>
+        .mui-content>.mui-table-view:first-child {
+            margin-top: 0;
+        }
+
+        .mui-media-body {
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav my-header">
+        <h1 class="mui-title">添加收货地址</h1>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:void(0)"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab mui-bar-footer my-footer">
+        <a class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon fa fa-shopping-cart"><span class="mui-badge"></span></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="#">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">我</span>
+        </a>
+    </nav>
+    <div class="mui-content">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <input type="text" name="receiver" placeholder="收货人姓名">
+            </div>
+            <div class="mui-input-row">
+                <input type="text" name="zipcode" placeholder="邮编">
+            </div>
+            <div class="mui-input-row" id="cityResult3">
+                <input type="text" name="address" placeholder="省市区" id="selectcity" readonly>
+            </div>
+            <div class="mui-input-row">
+                <input type="text" name="addressDetail" placeholder="详细地址">
+            </div>
+            <div class="mui-button-row">
+                <button id="add-btn" type="button" class="mui-btn mui-btn-primary">确认添加</button>&nbsp;&nbsp;
+            </div>
+
+        </form>
+    </div>
+
+    <script src="../js/public.js"></script>
+    <script src="../js/addaddress.js"></script>
+</body>
+
+</html>

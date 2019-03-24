@@ -1,0 +1,57 @@
+.my-content{
+	position: absolute;
+	left: 0;
+	top: 44px;
+	bottom: 50px;
+	width: 100%;
+	background-color: #f5f5f5;
+}
+.classfy-left{
+	float: left;
+	position: relative;
+	height: 100%;
+	width: 80px;
+}
+.classfy-left .links{
+	background-color: #fff;
+}
+.classfy-right{
+	
+	position: relative;
+	margin-left: 90px;
+	height: 100%;
+	
+}
+.classfy-left li a{
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 14px;
+	text-decoration: none;
+	color: #000000; 
+	border-right:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+}
+
+.classfy-left .links .active a{
+	background-color: #f5f5f5;
+	border-right: 1px solid transparent;
+}
+.classfy-right .links{
+	background-color: #fff;
+	padding: 10px 5px;
+}
+.classfy-right .links li{
+	width:33.3%;
+	float: left;
+}
+.classfy-right .links img{
+	width:100%;
+	border:1px solid #f5f5f5;
+	box-shadow: 1px 1px 5px #d5d5d5;
+}
+.noresult{
+	text-align: center;
+	color:rgb(161, 160, 157);
+}

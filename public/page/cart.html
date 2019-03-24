@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>购物车</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/cart.css" rel="stylesheet" />
+    <script src="../js/zepto.js"></script>
+    <script src="../js/template-web.js"></script>
+
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav my-header">
+        <h1 class="mui-title">购物车</h1>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:void(0)"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab mui-bar-footer my-footer">
+        <a class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item  mui-active" href="cart.html">
+            <span class="mui-icon fa fa-shopping-cart"><span class="mui-badge"></span></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">我</span>
+        </a>
+    </nav>
+    <div class="mui-content" id="refreshContainer">
+        <div>
+            <div class="product">
+
+                <ul class="mui-clearfix" id="cart-box">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script id="cart-product" type="text/template">
+        <% for(var i=0;i< result.length;i++){ %>
+			<li><a href="detail.html?id=<%= result[i].productId %>" class="mui-clearfix">
+                    <img class="mui-pull-left" src="<%= '../images/'+result[i].imgUrl %>"alt="item">
+                    <p class="mui-pull-left" id="proName" style="overflow: hidden;text-overflow:ellipsis;white-space:nowrap; "><%= result[i].proName %></p>
+                    <p class="mui-pull-left"><span><%= result[i].curPrice %></span><span class="originPrice">￥<%= result[i].originPrice %></span><span>鞋码<%= result[i].size %></span><span>×<%= result[i].num %></span></p>
+			</a></li>
+        <% } %>
+	</script>
+    <script src="../js/public.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

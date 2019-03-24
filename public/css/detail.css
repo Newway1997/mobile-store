@@ -1,0 +1,107 @@
+.mui-slider img {
+    vertical-align: top;
+}
+
+.product-title {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.price {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.price .orign-price {
+    color: #ccc;
+    text-decoration: line-through;
+    padding-left: 10px;
+}
+
+.price .now-price {
+    font-size: 24px;
+    color: #ea543a;
+}
+
+.size {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.size span {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin:2px 1px;
+}
+
+.num {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 28px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.num input {
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    float: left;
+
+}
+#num{
+    text-align: center;
+}
+.num span {
+    float: left;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 28px;
+   
+}
+
+.num div:first-child {
+    padding-right: 10px;
+}
+
+.num div:last-child {
+    padding-left: 10px;
+}
+
+.btns {
+    padding: 10px;
+    overflow: hidden;
+}
+.btns a{
+    float: left;
+    width: 50%;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    font-size: 14px;
+}
+.btns a:last-child{
+background-color: #991020;
+}
+.btns a:first-child{
+    background-color: #fa672d ;
+}
+.images img{
+ width:100%;
+}
+.size .active{
+    color:#fff;
+    background-color: #fa672d;
+}

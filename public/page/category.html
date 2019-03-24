@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>分类</title>
+	<script src="../js/mui.min.js"></script>
+	<link href="../css/mui.min.css" rel="stylesheet" />
+	<link href="../css/font-awesome.min.css" rel="stylesheet" />
+	<link href="../css/base.css" rel="stylesheet" />
+	<script src="../js/zepto.js"></script>
+	<script src="../js/template-web.js"></script>
+	<link href="../css/category.css" rel="stylesheet" />
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+
+</head>
+
+<body>
+	<header class="mui-bar mui-bar-nav my-header">
+		<h1 class="mui-title">分类</h1>
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:void(0)"></a>
+		<a class="mui-icon mui-icon-search mui-pull-right" href="search.html"></a>
+	</header>
+	<nav class="mui-bar mui-bar-tab mui-bar-footer my-footer">
+		<a class="mui-tab-item" href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item  mui-active" href="#">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="cart.html">
+			<span class="mui-icon fa fa-shopping-cart"><span class="mui-badge"></span></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item" href="user.html">
+			<span class="mui-icon mui-icon-contact"></span>
+			<span class="mui-tab-label">我</span>
+		</a>
+	</nav>
+	<div class="my-content">
+		<div class="classfy-left">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="links"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="classfy-right">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="links mui-clearfix">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script id="category-second" type="text/template">
+	<% for(var i=0;i< result.length;i++){ %>
+    		<li data-id=<%= result[i].id %>> <span><img src= <%='../images/'+result[i].brandLogo %> ></span></li>
+
+	<% } %>
+	<% if(!result.length){ %>
+    	<li class="noresult"><span>暂无数据</span></li>
+    <% } %>
+  </script>
+<script id="category-first" type="text/template">
+
+	<% for(var i=0;i< result.length;i++){ %>
+    <li data-id=<%= result[i].id %>><a href="javascript:void(0)"><%= result[i].categoryName %></a></li>
+    <% } %>
+	</script>
+<script src="../js/public.js"></script>
+<script src="../js/category.js">
+
+</script>
+
+</html>

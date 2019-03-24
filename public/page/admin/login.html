@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>管理员登录</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .container{
+            padding-top:150px;
+        }
+        .index_img{
+            width:300px;
+            height: 300px;
+        }
+        #message{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 text-center"><img class="index_img"></div>
+        <fieldset class="col-md-4">
+            <legend>
+                <p>Mobile-store后台管理</p>
+            </legend>
+            <br/>
+            <p><span id="message"></span></p>
+            <form>
+                <div class="form-group">
+                    <label>账号：</label><input  class="form-control" type="text" name="username">
+                </div>
+                <div class="form-group">
+                    <label>密码：</label><input class="form-control" type="password" name="password" >
+                </div>
+                <input class="btn btn-default" type="button" id="login-btn"  value="登录">
+            </form>
+        </fieldset>
+    </div>
+</div>
+<script src="/jquery/dist/jquery.min.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/admin/login.js"></script>
+</body>
+</html>

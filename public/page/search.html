@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>搜索</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/search.css" rel="stylesheet">
+    <script src="../js/zepto.js"></script>
+    <script src="../js/template-web.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav my-header">
+        <h1 class="mui-title">搜索</h1>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" href="javascript:void(0)"></a>
+        <a class="mui-icon mui-icon-search mui-pull-right"></a>
+    </header>
+    <nav class="mui-bar mui-bar-tab mui-bar-footer my-footer">
+        <a class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon fa fa-shopping-cart"><span class="mui-badge"></span></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">我</span>
+        </a>
+    </nav>
+    <div class="mui-content">
+        <div class="container">
+            <div class="search">
+                <input id="search-content" type="text" placeholder="搜索您喜欢的商品">
+                <input type="button" id="search-button" value="搜索">
+            </div>
+            <div class="history-top mui-clearfix">
+                <span class="title mui-pull-left" >搜索历史</span>
+                <span id="clear-history" class="clear mui-pull-right mui-icon mui-icon-trash">清空历史</span>
+
+            </div>
+            <ul id="history-box" class="mui-table-view">
+
+            </ul>
+        </div>
+    </div>
+    <script id="history" type="text/template">
+        <% for(var i=0;i< result.length;i++){ %>
+        <li class="mui-table-view-cell history-item" ><%= result[i] %></li>
+        <% } %>
+    </script>
+    <script src="../js/public.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>
