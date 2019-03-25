@@ -5,10 +5,10 @@ mobile前端采用mui+zepto开发，后端使用node+express进行开发。前�
 ` cd mobile-store`
 `npm start`
 ## 二、演示
-<img src=".\md_img\首页.png" width="50%" >
-<img src=".\md_img\商品.png" width="50%" >
-<img src=".\md_img\buy.png" width="50%">
-<img src=".\md_img\后台.png" width="100%" >
+<img src=".\md_img\首页.PNG" width="50%" >
+<img src=".\md_img\商品.PNG" width="50%" >
+<img src=".\md_img\buy.PNG" width="50%">
+<img src=".\md_img\后台.PNG" width="100%" >
 ## 三、API
 1. ### Admin管理端
 
