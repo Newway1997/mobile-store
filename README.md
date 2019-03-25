@@ -4,7 +4,12 @@ mobile前端采用mui+zepto开发，后端使用node+express进行开发。前�
 运行方式：
 ` cd mobile-store`
 `npm start`
-## 二、API
+## 二、演示
+<img src=".\md_img\首页.png" width="50%" >
+<img src=".\md_img\商品.png" width="50%" >
+<img src=".\md_img\buy.png" width="50%">
+<img src=".\md_img\后台.png" width="100%" >
+## 三、API
 1. ### Admin管理端
 
     1. #### 管理员登录
