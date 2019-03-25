@@ -5,6 +5,8 @@ mobile前端采用mui+zepto开发，后端使用node+express进行开发。前�
 ` cd mobile-store`
 `npm start`
 ## 二、演示
+手机端用户测试账号：user,密码:123456
+PC端管理员测试账号:root,密码:123456
 <img src=".\md_img\首页.PNG" width="50%" >
 <img src=".\md_img\商品.PNG" width="50%" >
 <img src=".\md_img\buy.PNG" width="50%">
